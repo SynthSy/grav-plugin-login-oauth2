@@ -670,46 +670,44 @@
             "response"
         ]
     },
-    {
-        "name": "omines/oauth2-gitlab",
-        "version": "3.1.0",
-        "version_normalized": "3.1.0.0",
+	{
+        "name": "wohali/oauth2-discord-new",
+        "version": "v1.0.0",
+        "version_normalized": "1.0.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/omines/oauth2-gitlab.git",
-            "reference": "e9cf370897b42edeffc6946123a1bd22d6006c33"
+            "url": "https://github.com/wohali/oauth2-discord-new.git",
+            "reference": "990bdfb59b4cd2086e0524b429dc12b5142d66ad"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/omines/oauth2-gitlab/zipball/e9cf370897b42edeffc6946123a1bd22d6006c33",
-            "reference": "e9cf370897b42edeffc6946123a1bd22d6006c33",
+            "url": "https://api.github.com/repos/wohali/oauth2-discord-new/zipball/990bdfb59b4cd2086e0524b429dc12b5142d66ad",
+            "reference": "990bdfb59b4cd2086e0524b429dc12b5142d66ad",
             "shasum": ""
         },
         "require": {
-            "league/oauth2-client": "^2.2",
-            "php": ">=5.6"
+            "league/oauth2-client": "^2.0"
+        },
+        "conflict": {
+            "team-reflex/oauth2-discord": ">=1.0"
         },
         "require-dev": {
-            "friendsofphp/php-cs-fixer": "^2.0",
-            "m4tthumphrey/php-gitlab-api": "^9.0.0",
-            "mockery/mockery": "^1.0",
-            "php-http/guzzle6-adapter": "^1.1.1",
-            "phpunit/phpunit": "^5.7 || ^6.0"
+            "jakub-onderka/php-parallel-lint": "~0.9",
+            "mockery/mockery": "~0.9",
+            "phpunit/phpunit": "^5.0",
+            "squizlabs/php_codesniffer": "^2.0"
         },
-        "suggest": {
-            "m4tthumphrey/php-gitlab-api": "For further API usage using the acquired OAuth2 token"
-        },
-        "time": "2017-11-01T21:46:33+00:00",
+        "time": "2017-10-15 23:24:28",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.x-dev"
+                "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
-                "Omines\\OAuth2\\Client\\": "src/"
+                "Wohali\\OAuth2\\Client\\": "src/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -718,17 +716,17 @@
         ],
         "authors": [
             {
-                "name": "Niels Keurentjes",
-                "email": "niels.keurentjes@omines.com",
-                "homepage": "https://www.omines.nl/"
+                "name": "Joan Touzet",
+                "email": "wohali@gmail.com",
+                "homepage": "https://github.com/wohali"
             }
         ],
-        "description": "GitLab OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+        "description": "Discord OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
         "keywords": [
             "authorisation",
             "authorization",
             "client",
-            "gitlab",
+            "discord",
             "oauth",
             "oauth2"
         ]

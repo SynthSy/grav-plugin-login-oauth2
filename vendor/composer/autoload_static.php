@@ -19,9 +19,9 @@ class ComposerStaticInitcc61c3bf48907c3dd4f2a55c10334eb3
         array (
             'Psr\\Http\\Message\\' => 17,
         ),
-        'O' => 
+		'W' => 
         array (
-            'Omines\\OAuth2\\Client\\' => 21,
+            'Wohali\\OAuth2\\Client\\' => 21,
         ),
         'L' => 
         array (
@@ -37,13 +37,13 @@ class ComposerStaticInitcc61c3bf48907c3dd4f2a55c10334eb3
     );
 
     public static $prefixDirsPsr4 = array (
+		'Wohali\\OAuth2\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wohali/oauth2-discord-new/src',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
-        ),
-        'Omines\\OAuth2\\Client\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/omines/oauth2-gitlab/src',
         ),
         'League\\OAuth2\\Client\\' => 
         array (
